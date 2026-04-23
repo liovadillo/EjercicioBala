@@ -28,7 +28,7 @@ namespace EjercicioBala.Controllers
         {
             var doctor = _doctorService.GetById(id);
             if (doctor == null)
-                return NotFound($"Doctor ID: {id} doesnt exists");
+                return NotFound($"Doctor ID: {id} not found from BRANCH.");
 
             return Ok(doctor);
         }
