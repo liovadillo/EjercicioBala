@@ -23,7 +23,7 @@ namespace EjercicioBala.Controllers
 
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}")] //Get Doctor by ID
         public ActionResult<Doctor> GetById(int id)
         {
             var doctor = _doctorService.GetById(id);
